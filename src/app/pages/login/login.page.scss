@@ -1,0 +1,51 @@
+*{
+  font-family: 'Rakkas';
+}
+.logo{
+  height: 30%;
+}
+
+.form{
+  height: 70%;
+}
+
+.input{
+  border: solid #EC6808 3px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #979494;
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+.button{
+  border-radius: 50px;
+  background-color: #EC6808;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+#icon{
+  height: 30px;
+  width: 30px;
+}
+
+.link{
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+}
+
+.text{
+padding-left: 8px;
+font-size: 13px;
+}
+
+#text{
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  color: #EC6808;
+}
