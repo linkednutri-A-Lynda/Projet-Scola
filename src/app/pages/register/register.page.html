@@ -1,9 +1,63 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>register</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <ion-row class="logo">
+    <ion-col size="8" offset="2" class="ion-align-self-center" >
+      <img src="assets/img/scola.png" alt="logo">
+    </ion-col>
+  </ion-row>
+  <ion-row class="form">
+
+    <ion-col size="12">
+      <ion-row>
+        <ion-col size="6">
+          <ion-item class="link">
+            <img src="assets/icon/user.svg" alt="logo" id="icon">
+            <ion-label type="text" class="text"> Connexion </ion-label>
+          </ion-item>
+        </ion-col>
+        <ion-col size="6">
+          <ion-item class="link">
+            <img src="assets/icon/add-user.svg" alt="logo" id="icon">
+            <ion-label type="text" class="text"> Inscription </ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+
+    <ion-col size="12" id="firstLastName">
+      <ion-row >
+        <ion-col size="6">
+          <ion-item class="input">
+            <ion-input placeholder="Nom" type="text" [(ngModel)]="firstname"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="6">
+          <ion-item class="input">
+            <ion-input placeholder="Prénom" type="text" [(ngModel)]="lastname" ></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-item class="input">
+        <ion-input placeholder="Date de naissance" type="date" [(ngModel)]="date"></ion-input>
+      </ion-item>
+      <ion-item class="input">
+        <ion-input placeholder="Adresse" type="text" [(ngModel)]="adress" ></ion-input>
+      </ion-item>
+      <ion-item class="input">
+        <ion-input placeholder="Adresse e-mail" type="email" [(ngModel)]="email"></ion-input>
+      </ion-item>
+      <ion-item class="input">
+        <ion-input placeholder="Confirmer e-mail" type="email" [(ngModel)]="email" ></ion-input>
+      </ion-item>
+      <ion-item class="input">
+        <ion-input placeholder="Mot de passe" type="password" [(ngModel)]="password" ></ion-input>
+      </ion-item>
+      <ion-item class="input">
+        <ion-input placeholder="Confirmer mot de passe" type="password" [(ngModel)]="password" ></ion-input>
+      </ion-item>
+      <ion-col size="6" offset="3" class="ion-align-self-center" >
+        <ion-button  class="button" color="#EC6808" shape="round" (click)="inscription()">Inscription</ion-button>
+      </ion-col>
+    </ion-col>
+  </ion-row>
 
 </ion-content>

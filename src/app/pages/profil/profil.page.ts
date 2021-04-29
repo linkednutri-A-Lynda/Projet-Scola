@@ -12,4 +12,8 @@ export class ProfilPage implements OnInit {
   ngOnInit() {
   }
 
+  modifier(){
+
+  }
+
 }

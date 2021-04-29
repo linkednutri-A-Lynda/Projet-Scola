@@ -1,0 +1,67 @@
+*{
+  font-family: 'Rakkas';
+}
+
+.header{
+  height: 10%;
+  margin-top: 20px;
+  padding-right: 10px;
+  left: 0;
+}
+
+.bulleProfile{
+  height: 20%;
+}
+
+.infos{
+  height: 65%;
+  margin: 5px;
+}
+
+#logo{
+  height: 50px;
+  width: 120px;
+}
+
+#menu{
+  width: 40px;
+  height: 40px;
+  float: right;
+}
+
+#profil{
+  width: 50px;
+  height: 50px;
+  fill:#EC6808;
+}
+
+#profilButton{
+  border: solid #EC6808 2px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+#block{
+  border: solid #EC6808 4px;
+  border-radius: 30px;
+}
+
+.bouton{
+  border-radius: 50px;
+  background-color: #EC6808;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+ul{
+  list-style: none;
+  padding-left: 20px;
+}
+
+li {
+  font-size:18px ;
+  font-weight: bold;
+  margin-bottom: 25px;
+
+}

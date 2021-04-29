@@ -1,0 +1,49 @@
+*{
+  font-family: 'Rakkas';
+}
+.logo{
+  height: 15%;
+}
+
+.form{
+  height: 80%;
+  padding: 0;
+}
+
+.input{
+  border: solid #EC6808 3px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #979494;
+  border-radius: 50px;
+  font-size: 16px;
+}
+
+.button{
+  border-radius: 50px;
+  background-color: #EC6808;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+#icon{
+  height: 30px;
+  width: 30px;
+}
+
+.link{
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+}
+
+.text{
+padding-left: 8px;
+font-size: 13px;
+}
+
+.firstLastName{
+  border: solid red 2px;
+}
