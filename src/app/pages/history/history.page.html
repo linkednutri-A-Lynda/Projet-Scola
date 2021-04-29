@@ -1,14 +1,27 @@
-<ion-content>
+<ion-header>
   <ion-row class="header">
-    <ion-col size="12" class="ion-align-self-center" >
-      <img src="assets/img/scola.png" alt="logo" id="logo">
-      <img src="assets/icon/hamb.png" alt="menu" id="menu">
-    </ion-col>
-  </ion-row>
-  <ion-row class="container">
     <ion-col size="12">
-
+      <ion-toolbar  size="12" class="test" >
+        <img src="assets/img/scola.png" alt="logo" id="logo" routerLink="/home">
+        <ion-buttons slot="end">
+          <ion-menu-button menu="main-menu"></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
     </ion-col>
   </ion-row>
+</ion-header>
+<ion-content>
+  <ion-row class="title">
+    <ion-col size="12" class="title">
+      <ion-title id="label" class="ion-align-self-center">Mon historique</ion-title>
+    </ion-col>
+  </ion-row>
+  <ion-row class="history">
+    <ion-item id="item">
 
+    </ion-item>
+    <ion-item id="item">
+
+    </ion-item>
+  </ion-row>
 </ion-content>

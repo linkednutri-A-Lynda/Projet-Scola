@@ -7,30 +7,36 @@
     </ion-header>
     <ion-content>
       <ion-list>
-        <ion-item>
-          <ion-icon name="search-outline"></ion-icon>
-          <ion-label>Search</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-icon name="home-outline"></ion-icon>
-          <ion-label>Home</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-icon name="timer-outline"></ion-icon>
-          <ion-label>History</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-icon name="person-outline"></ion-icon>
-          <ion-label>Profil</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-icon name="settings-outline"></ion-icon>
-          <ion-label>Settings</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-icon name="power-outline"></ion-icon>
-          <ion-label>Déconnexion</ion-label>
-        </ion-item>
+        <ion-menu-toggle>
+          <ion-item routerLink="/search">
+            <ion-icon name="search-outline"></ion-icon>
+            <ion-label>Search</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="/home">
+            <ion-icon name="home-outline"></ion-icon>
+            <ion-label>Home</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="/history">
+            <ion-icon name="timer-outline"></ion-icon>
+            <ion-label>Historique</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="/profil">
+            <ion-icon name="person-outline"></ion-icon>
+            <ion-label>Profil</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="/login">
+            <ion-icon name="power-outline"></ion-icon>
+            <ion-label>Déconnexion</ion-label>
+          </ion-item>
+      </ion-menu-toggle>
       </ion-list>
     </ion-content>
   </ion-menu>

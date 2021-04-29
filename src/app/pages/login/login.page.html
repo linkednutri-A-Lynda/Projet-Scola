@@ -1,7 +1,7 @@
 <ion-content>
   <ion-row class="logo">
     <ion-col size="8" offset="2" class="ion-align-self-center" >
-      <img src="assets/img/scola.png" alt="logo">
+      <img src="assets/img/scola.png" alt="logo" routerLink="/home">
     </ion-col>
   </ion-row>
 
@@ -10,13 +10,13 @@
     <ion-col size="12">
       <ion-row>
         <ion-col size="6">
-          <ion-item class="link">
+          <ion-item class="link" routerLink="/login">
             <img src="assets/icon/user.svg" alt="logo" id="icon">
             <ion-label type="text" class="text"> Connexion </ion-label>
           </ion-item>
         </ion-col>
         <ion-col size="6">
-          <ion-item class="link">
+          <ion-item class="link" routerLink="/register">
             <img src="assets/icon/add-user.svg" alt="logo" id="icon">
             <ion-label type="text" class="text"> Inscription </ion-label>
           </ion-item>
@@ -30,8 +30,8 @@
       </ion-item>
       <ion-item class="input">
        <ion-input placeholder="Mot de passe" type="password" [(ngModel)]="password" ></ion-input>
-      </ion-item>
-      <p id="text">Mot de passe oublié?</p>
+      </ion-item >
+      <p id="text" routerLink="/">Mot de passe oublié?</p>
     </ion-col>
 
     <ion-col size="6" offset="3" class="ion-align-self-center" >

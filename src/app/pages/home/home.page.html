@@ -1,14 +1,30 @@
-<ion-content>
+<ion-header>
   <ion-row class="header">
-    <ion-col size="12" class="ion-align-self-center" >
-      <img src="assets/img/scola.png" alt="logo" id="logo">
-      <img src="assets/icon/hamb.png" alt="menu" id="menu">
-    </ion-col>
-  </ion-row>
-  <ion-row class="container">
     <ion-col size="12">
-
+      <ion-toolbar  size="12" class="test" >
+        <img src="assets/img/scola.png" alt="logo" id="logo" routerLink="/home">
+        <ion-buttons slot="end">
+          <ion-menu-button menu="main-menu"></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
     </ion-col>
   </ion-row>
+</ion-header>
+<ion-content>
+  <ion-row class="title">
+    <ion-col size="12" >
+      <div id="label">Bienvenue sur  <span style="color: #EC6808; font-size: 22px;">S’cola</span> , l’application
+        qui vous permet d’apprendre à votre rythme.
+        Vous pouvez souscrire à un abonnement afin de voir un nombre illimité de vidéos ou bien louer les vidéos que vous souhaitez quand vous le voulez!</div>
+    </ion-col>
+  </ion-row>
+  <ion-row class="video">
 
+    <ion-item id="item" routerLink="/subscription" >
+    </ion-item>
+
+    <ion-item id="item" routerLink="/subscription">
+    </ion-item>
+
+  </ion-row>
 </ion-content>

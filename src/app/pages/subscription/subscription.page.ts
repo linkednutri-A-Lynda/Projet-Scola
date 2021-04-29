@@ -12,4 +12,10 @@ export class SubscriptionPage implements OnInit {
   ngOnInit() {
   }
 
+  louer(){
+  }
+
+  abonner(){
+
+  }
 }

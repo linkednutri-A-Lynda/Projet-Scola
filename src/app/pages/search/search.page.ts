@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchPage implements OnInit {
 
+  mot: string;
+  dure: string;
+  price: string;
+  datePub: Date;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  search(){
   }
 
 }

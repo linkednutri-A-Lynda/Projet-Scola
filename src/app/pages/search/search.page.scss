@@ -3,11 +3,10 @@
 }
 
 .header{
-  height: 10%;
-  margin-top: 20px;
-  padding-right: 10px;
-  left: 0;
+  padding: 0;
+  background-color: white;
 }
+
 
 #logo{
   height: 50px;
@@ -18,4 +17,30 @@
   width: 40px;
   height: 40px;
   float: right;
+}
+
+#search{
+  height: 50px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.input{
+  border: solid #EC6808 3px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #979494;
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+.bouton{
+  border-radius: 50px;
+  background-color: #EC6808;
+  color: #FFFFFF;
+  font-weight: bold;
 }

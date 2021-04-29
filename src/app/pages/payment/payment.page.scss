@@ -1,0 +1,51 @@
+*{
+  font-family: 'Rakkas';
+  text-align: center;
+}
+
+.header{
+  padding: 0;
+  background-color: white;
+}
+
+#logo{
+  height: 50px;
+  width: 120px;
+  float: left;
+}
+
+#menu{
+  width: 40px;
+  height: 40px;
+  float: right;
+}
+
+#carte{
+  height: 50px;
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.input{
+  border: solid #EC6808 3px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #979494;
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+.bouton{
+  border-radius: 50px;
+  background-color: #EC6808;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.label{
+  color: #EC6808;
+  font-weight: bold;
+}
