@@ -41,10 +41,13 @@ export class LoginPage implements OnInit {
     });
     // await load.present();
 
-    this.auth.getProfile().subscribe(async (user) =>{
-      console.log(user);
+    this.auth.login(this.email, this.password).then(async (user) =>{
+      await this.loading.dismiss();
       this.router.navigate(['/home']);
-      await load.onDidDismiss();
-    });
-    }
+    }).catch(()=>{
+    this.email = '';
+    this.password = '';
+    this.isError = true;
+  });
+}
 }
