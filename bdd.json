@@ -1,9 +1,17 @@
 {
   "0": {
+    "nom":"abdous",
+    "prenom":"lynda",
+    "dateBirth":"05-22-1997",
+    "adress":"19 rue st martin 92000",
     "email": "lyndaabdous7@gmail.com",
     "password": "22051997"
   },
   "1": {
+    "nom":"test",
+    "prenom":"test",
+    "dateBirth":"05-22-1997",
+    "adress":"19 rue st martin 92000",
     "email": "lyndaabdous7@gmail.com",
     "password": "22051997"
   }

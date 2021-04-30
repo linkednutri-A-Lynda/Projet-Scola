@@ -27,32 +27,29 @@
       <ion-row >
         <ion-col size="6">
           <ion-item class="input">
-            <ion-input placeholder="Nom" type="text" [(ngModel)]="firstname"></ion-input>
+            <ion-input placeholder="Nom" type="text" [(ngModel)]="user.nom" [ngClass]=" user.password.trim().length < 2 ? 'errorEmail' : 'goodEmail'"></ion-input>
           </ion-item>
         </ion-col>
         <ion-col size="6">
           <ion-item class="input">
-            <ion-input placeholder="Prénom" type="text" [(ngModel)]="lastname" ></ion-input>
+            <ion-input placeholder="Prénom" type="text" [(ngModel)]="user.prenom" [ngClass]=" user.password.trim().length < 2 ? 'errorEmail' : 'goodEmail'" ></ion-input>
           </ion-item>
         </ion-col>
       </ion-row>
       <ion-item class="input">
-        <ion-input placeholder="Date de naissance" type="date" [(ngModel)]="date"></ion-input>
+        <ion-input placeholder="N° de téléphone" type="text" [(ngModel)]="user.numero" [ngClass]=" user.password.trim().length < 10 ? 'errorEmail' : 'goodEmail'"></ion-input>
       </ion-item>
       <ion-item class="input">
-        <ion-input placeholder="Adresse" type="text" [(ngModel)]="adress" ></ion-input>
+        <ion-input placeholder="Adresse" type="text" [(ngModel)]="user.adress"></ion-input>
       </ion-item>
       <ion-item class="input">
-        <ion-input placeholder="Adresse e-mail" type="email" [(ngModel)]="email"></ion-input>
+        <ion-input placeholder="Adresse e-mail" type="email" [ngClass]=" isError ? 'errorEmail' : 'goodEmail'"></ion-input>
       </ion-item>
       <ion-item class="input">
-        <ion-input placeholder="Confirmer e-mail" type="email" [(ngModel)]="email" ></ion-input>
+        <ion-input placeholder="Mot de passe" type="password" [(ngModel)]="user.password"  [ngClass]=" user.password.trim().length < 8 ? 'errorEmail' : 'goodEmail'" ></ion-input>
       </ion-item>
       <ion-item class="input">
-        <ion-input placeholder="Mot de passe" type="password" [(ngModel)]="password" ></ion-input>
-      </ion-item>
-      <ion-item class="input">
-        <ion-input placeholder="Confirmer mot de passe" type="password" [(ngModel)]="password" ></ion-input>
+        <ion-input placeholder="Confirmer mot de passe" type="password" [(ngModel)]="user.passwordConf" [ngClass]=" user.password.trim() != user.passwordConf.trim() ? 'errorEmail' : 'goodEmail'" ></ion-input>
       </ion-item>
       <ion-col size="6" offset="3" class="ion-align-self-center" >
         <ion-button  class="button" color="#EC6808" shape="round" (click)="inscription()">Inscription</ion-button>

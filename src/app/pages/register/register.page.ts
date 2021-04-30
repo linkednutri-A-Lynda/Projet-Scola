@@ -1,21 +1,34 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
 
+interface newUser{
+  nom: string;
+  prenom: string;
+  numero: string;
+  adress: string;
+  email: string;
+  password: string;
+  passwordConf: string;
+}
+
+
 @Component({
   selector: 'app-register',
   templateUrl: './register.page.html',
   styleUrls: ['./register.page.scss'],
 })
+
 export class RegisterPage implements OnInit {
 
-  firstname: string;
-  lastname: string;
-  date: Date;
-  adress: string;
-  email: string;
-  password: string;
+  isError: boolean = true;
+  user: newUser ={nom: '', prenom: '', numero:'', adress: '', email: '', password: '', passwordConf: '' };
 
   constructor(private auth: AuthService) { }
+
+  checkEmail(){
+    const regex = new RegExp(/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g);
+    this.isError = (regex.test(this.user.email.trim())) ? false : true ;
+  }
 
   ngOnInit() {
   }
@@ -26,3 +39,5 @@ export class RegisterPage implements OnInit {
     });
   }
 }
+
+
