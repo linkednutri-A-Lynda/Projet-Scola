@@ -52,7 +52,7 @@
         <ion-input placeholder="Confirmer mot de passe" type="password" [(ngModel)]="user.passwordConf" [ngClass]=" user.password.trim() != user.passwordConf.trim() ? 'errorEmail' : 'goodEmail'" ></ion-input>
       </ion-item>
       <ion-col size="6" offset="3" class="ion-align-self-center" >
-        <ion-button  class="button" color="#EC6808" shape="round" (click)="inscription()">Inscription</ion-button>
+        <ion-button  class="button" color="#EC6808" shape="round" routerLink="/login">Inscription</ion-button>
       </ion-col>
     </ion-col>
   </ion-row>

@@ -1,16 +1,6 @@
+import { NewUser } from './../../interfaces/new-user';
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
-
-interface newUser{
-  nom: string;
-  prenom: string;
-  numero: string;
-  adress: string;
-  email: string;
-  password: string;
-  passwordConf: string;
-}
-
 
 @Component({
   selector: 'app-register',
@@ -21,7 +11,7 @@ interface newUser{
 export class RegisterPage implements OnInit {
 
   isError: boolean = true;
-  user: newUser ={nom: '', prenom: '', numero:'', adress: '', email: '', password: '', passwordConf: '' };
+  user: NewUser ={nom: '', prenom: '', numero:'', adress: '', email: '', password: '', passwordConf: '' };
 
   constructor(private auth: AuthService) { }
 

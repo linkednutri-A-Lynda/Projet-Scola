@@ -1,3 +1,4 @@
+import { NewUser } from './../interfaces/new-user';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
@@ -13,12 +14,17 @@ export class AuthService {
   login(email: string, mdp: string){
     return new Promise((resolve, rejects)=>{
       this.http.post(this.url + '/login', {email: email,  password: mdp }).subscribe((data: any) => {
-        if(!data.success)
-          rejects(false)
-        else
-          resolve(data)
-      })
-    })
+        (!data.success) ? rejects(false) : resolve(data);
+      });
+    });
+  }
+
+  register(user: NewUser){
+    return new Promise((resolve, rejects)=>{
+      this.http.post(this.url + '/register', user).subscribe((data: any) => {
+        (!data.success) ? rejects(false) : resolve(data);
+      });
+    });
   }
   getProfile(){
     return this.http.get(this.url+'/profil');

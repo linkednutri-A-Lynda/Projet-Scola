@@ -35,7 +35,7 @@
     </ion-col>
 
     <ion-col size="6" offset="3" class="ion-align-self-center" >
-      <ion-button [disabled]="isError || password.trim().length<8" class="button" color="#EC6808" shape="round" (click)="login()">Connexion</ion-button>
+      <ion-button [disabled]="isError || password.trim().length<8" class="button" color="#EC6808" shape="round" routerLink="/home">Connexion</ion-button>
     </ion-col>
   </ion-row>
 </ion-content>
