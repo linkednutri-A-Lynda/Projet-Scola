@@ -1,7 +1,10 @@
+import { MdpOublieComponent } from './../../modals/mdp-oublie/mdp-oublie.component';
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
 import { LoadingController } from '@ionic/angular';
+import {ModalController} from '@ionic/angular';
+
 
 @Component({
   selector: 'app-login',
@@ -10,14 +13,27 @@ import { LoadingController } from '@ionic/angular';
 })
 export class LoginPage implements OnInit {
 
-  email: string;
-  password: string;
+  email: string = '';
+  password: string = '';
 
-  constructor(private auth: AuthService, private loading: LoadingController, private router: Router) { }
+  isError: boolean = true;
+
+  constructor(private modalController: ModalController, private auth: AuthService, private loading: LoadingController, private router: Router) { }
 
   ngOnInit() {
   }
 
+  async mdpOublie() {
+    const modal = await this.modalController.create({
+      component: MdpOublieComponent,
+    });
+    return await modal.present();
+  }
+
+  checkEmail(){
+    const regex = new RegExp(/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g);
+    this.isError = (regex.test(this.email.trim())) ? false : true ;
+  }
   async login(){
     const load = await this.loading.create({
       cssClass: 'my-custom-class',

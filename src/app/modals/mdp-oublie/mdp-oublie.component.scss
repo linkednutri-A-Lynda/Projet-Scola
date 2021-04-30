@@ -1,12 +1,9 @@
 *{
   font-family: 'Rakkas';
+  text-align: center;
 }
 .logo{
   height: 30%;
-}
-
-.form{
-  height: 70%;
 }
 
 .input{
@@ -27,33 +24,17 @@
   font-weight: bold;
 }
 
-#icon{
-  height: 25px;
-  width: 25px;
-}
-
-.link{
-  font-weight: bold;
-  display: flex;
-  flex-direction: row;
-}
-
-.text{
-padding-left: 8px;
-font-size: 12px;
-}
-
-#text{
-  text-align: center;
-  font-size: 13px;
-  font-weight: bold;
-  color: #EC6808;
-}
-
 .errorEmail{
   color: red;
 }
 
 .goodEmail{
   color: green;
+}
+
+.text{
+  font-weight: bold;
+  color: #EC6808;
+  margin: 20px;
+  font-size: 22px;
 }
